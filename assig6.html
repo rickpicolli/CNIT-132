@@ -8,7 +8,7 @@
 <style>
 :root { --color: blue; }
 body { background-color: cyan;
-	color: blue;
+	color: blue; color: var(--color);
  	}
 
 h1 { text-align:center; height: 120px;
@@ -20,12 +20,12 @@ a { text-decoration: none; }
 
 a:hover {
 	background-color: yellow;
-	color: blue;
+	color: blue; color: var(--color);
 }
 
-a:link {color: blue;}
-a:visited {color: red;}
-a:active {color: red;}
+a:link {color: blue; color: var(--color);}
+a:visited { --color: red; color: var(--color);}
+a:active { --color: red; color: var(--color);}
 
 
 ul { 
