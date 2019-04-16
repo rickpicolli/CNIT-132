@@ -6,7 +6,7 @@
 <meta name="description" content="working with CSS variables specificity and inheritance">
 <title>CSS Variables Assignment</title>
 <style>
-:root { }
+:root { --color: blue; }
 body { background-color: cyan;
 	color: blue;
  	}
@@ -20,13 +20,20 @@ a { text-decoration: none; }
 
 a:hover {
 	background-color: yellow;
+	color: blue;
 }
+
+a:link {color: blue;}
+a:visited {color: red;}
+a:active {color: red;}
+
 
 ul { 
 	list-style-image:  url("ballsmall.png");
 	text-decoration: none;
-
 }
+
+ul:link {}
 </style>
  <body>
 <h1>ABC Volleyball League</h1>
