@@ -31,7 +31,8 @@ h3 {
 img {
 	width: 150px;
 	height: 140px;
-	margin-right:20px
+	margin-right:20px;
+	float: left;
 }
 
 #footer {
